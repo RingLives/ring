@@ -1,0 +1,28 @@
+{
+    "name": "ringlives/ring",
+    "description": "Ringlives is a content management system.",
+    "keywords": ["laravel", "ringlives", "ring", "cms"],
+    "autoload": {
+        "psr-4": {
+            "Ringlives\\Ring\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "ringlives",
+            "email": "shohidurr49@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.2.5|^8.0",
+        "laravel/framework": "^7.29"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ringlives\\Ring\\App\\RingServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev"
+}
