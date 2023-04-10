@@ -1,5 +1,5 @@
 <?php
 
 return [
-    'admin_theme' => 'adminlte',
+    'admin_theme' => 'ring',
 ];
