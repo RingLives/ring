@@ -1,8 +1,11 @@
 {
     "name": "ringlives/ring",
     "description": "Ringlives is a content management system.",
-    "keywords": ["laravel", "ringlives", "ring", "cms"],
+    "keywords": ["laravel", "ringlives", "ring", "laravel-cms"],
     "autoload": {
+        "files": [
+            "src/Supports/helpers.php"
+        ],
         "psr-4": {
             "Ringlives\\Ring\\": "src/"
         }
@@ -14,15 +17,17 @@
         }
     ],
     "require": {
-        "php": "^7.2.5|^8.0",
-        "laravel/framework": "^7.29"
+        "php": "^7.2.5|^8.0"
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Ringlives\\Ring\\App\\RingServiceProvider"
+                "Ringlives\\Ring\\RingServiceProvider"
             ]
         }
+    },
+    "config": {
+        "sort-packages": true
     },
     "minimum-stability": "dev"
 }
